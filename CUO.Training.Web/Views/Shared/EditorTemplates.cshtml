@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "EditorTemplates";
+}
+
+<h2>EditorTemplates</h2>
+
+@model Enum
+@foreach (var value in Enum.GetValues(Model.GetType()))
+{
+    @Html.RadioButtonFor(m => m, value)
+    @Html.Label(value.ToString())
+}
