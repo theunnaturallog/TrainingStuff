@@ -35,6 +35,11 @@ namespace CUO.Training.Web.Controllers
             return View();
         }
 
+        public ActionResult Calculator()
+        {
+            return View();
+        }
+
         public ActionResult Add(decimal x = 1, decimal y = 2)
         {
             var requestUrl = baseURL + "/Math/Add";
